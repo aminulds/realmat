@@ -1,0 +1,42 @@
+.header {
+    background-color: $white;
+    box-shadow: $box-shadow-drop-1;
+
+    .navbar-brand {
+        margin-right: 100px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            &:not(:last-of-type) {
+                margin-right: 40px;
+            }
+        }
+
+        .nav-link {
+            color: $color_dark;
+            padding: 38px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.3s;
+
+            &:hover {
+                border-color: $color_primary;
+            }
+        }
+
+        .active {
+            color: $color_primary;
+            border-color: $color_primary;
+        }
+    }
+}
+
+.auth_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

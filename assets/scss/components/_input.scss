@@ -1,0 +1,30 @@
+// button
+.btn {
+    padding: 9px 18px;
+    border-color: transparent;
+    transition: $transition-base;
+    font-weight: 500;
+}
+
+.btn_primary {
+    background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: linear-gradient(180deg, #532B79 0%, #FA4A6F 100%);
+        color: $white !important;
+    }
+}
+
+.btn_outline {
+    border-color: $color_primary;
+
+    &:hover,
+    &:focus {
+        background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+        border-color: transparent !important;
+        color: $white !important;
+    }
+}
