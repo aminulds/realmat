@@ -288,12 +288,18 @@ $cyans: (
 // custom theme color
 $color_primary: #FA4A6F;
 $color_secondary: #EC3384;
+$color_bg: #F8F0FF;
 $color_dark: #23273A;
 $color_blue: #0EB7BE;
 $color_purple: #532B79;
 $color_gradient-1: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%
 );
 $color_gradient-2: linear-gradient(180deg, #532B79 0%, #FA4A6F 100%);
+$color-gradien_radial-1: radial-gradient(38.69% 38.69% at 65.34% 54.59%, #F8F0FF 0%, #FFF7FA 100%);
+$shadow-drop: 0px 4px 0px 0px #0000000D;
+$color_border: #EDEDED;
+
+
 
 // scss-docs-start theme-color-variables
 $primary: $color_primary !default;
@@ -501,9 +507,9 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-  xxxl: 1820px) !default;
+  xl: 1150px,
+  xxl: 1350px,
+  xxxl: 1870px) !default;
 
 // scss-docs-end container-max-widths
 
@@ -537,7 +543,7 @@ $border-widths: (
   4: 4px,
   5: 5px) !default;
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+$border-color: $color_border !default;
 $border-color-translucent: rgba($black, .175) !default;
 // scss-docs-end border-variables
 

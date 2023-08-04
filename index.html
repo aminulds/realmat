@@ -14,7 +14,8 @@
     </head>
 
     <body>
-        <header class="header">
+        <!-- header -->
+        <header class="header position-fixed w-100">
             <nav class="navbar navbar-expand-lg p-0">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -52,6 +53,99 @@
                 </div>
             </nav>
         </header>
+
+        <!-- page content -->
+        <main class="page__layout">
+            <!-- banner -->
+            <section class="banner">
+                <!-- <img class="banner__img" src="assets/images/banner/banner_couple.png" alt="banner_couple"> -->
+                <div class="container">
+                    <div class="row justify-content-center justify-content-lg-end">
+                        <div class="col-lg-6">
+                            <div class="banner__content">
+                                <h1 class="banner__title">Find your mate with us</h1>
+
+                                <div class="form">
+                                    <h2 class="form__title">Create your profile for your perfect match!</h2>
+                                    <form class="row g-3 g-md-4">
+                                        <div class="col-12">
+                                            <label for="create_profile" class="form__label">Create profile for</label>
+                                            <select id="create_profile" class="form__input form-select">
+                                                <option selected>Self</option>
+                                                <option>Friend</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="first_name" class="form__label">First Name</label>
+                                            <input type="text" id="first_name" class="form__input form-control" placeholder="Cameron">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="last_name" class="form__label">Last Name</label>
+                                            <input type="text" id="last_name" class="form__input form-control" placeholder="Williamson">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="email" class="form__label">Email Address</label>
+                                            <input type="email" id="email" class="form__input form-control" placeholder="kenzi.lawson@example.com">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row g-3 g-md-4">
+                                                <label class="form__label">Mobile Number</label>
+                                                <div class="col-5">
+                                                    <select id="country_code" class="form__input form-select">
+                                                        <option selected>(+880)</option>
+                                                        <option>(+91)</option>
+                                                        <option>(+61)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" id="mobile" class="form__input form-control" placeholder="123 5678 900">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="gender" class="form__label">Gender</label>
+                                            <select id="gender" class="form__input form-select">
+                                                <option selected>Male</option>
+                                                <option>Female</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="gender" class="form__label">Country</label>
+                                            <select id="gender" class="form__input form-select">
+                                                <option selected>Bangladesh</option>
+                                                <option>India</option>
+                                                <option>Singapore</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="create_pass" class="form__label">Create Your Password</label>
+                                            <input type="password" class="form__input form-control" id="create_pass" placeholder="******">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="confirm_pass" class="form__label">Confirm Your Password</label>
+                                            <input type="password" class="form__input form-control" id="confirm_pass" placeholder="******">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form__check form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form__label" for="gridCheck">
+                                                    I have read and accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn_primary w-100">Create Account</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
 
         <!-- Bootstrap JS -->

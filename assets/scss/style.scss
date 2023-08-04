@@ -5,6 +5,12 @@
 // Custom style //
 // global
 @import './global';
+
 // components
+@import './components/page_layout';
 @import './components/header';
 @import './components/input';
+@import './components//form';
+
+// section
+@import './sections/banner';

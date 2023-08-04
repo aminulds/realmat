@@ -1,7 +1,7 @@
 // button
 .btn {
     padding: 9px 18px;
-    border-color: transparent;
+    border: none;
     transition: $transition-base;
     font-weight: 500;
     border-radius: 5px;
@@ -10,6 +10,7 @@
 .btn_primary {
     background: $color_gradient-1;
     color: $white;
+    height: 38px;
 
     &:hover,
     &:active,
@@ -20,12 +21,12 @@
 }
 
 .btn_outline {
-    border-color: $color_primary;
+    border: 1px solid $color_primary;
 
     &:hover,
     &:focus {
         background: $color_gradient-1;
-        border-color: transparent !important;
+        border-color: $color_primary !important;
         color: $white !important;
     }
 }

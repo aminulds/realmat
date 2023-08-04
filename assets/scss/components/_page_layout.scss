@@ -1,0 +1,12 @@
+.page__layout {
+    padding-top: 102px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 77px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 66px;
+    }
+
+}

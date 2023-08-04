@@ -1,0 +1,37 @@
+.banner {
+    background-image: url(/assets/images/banner/banner_couple.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-color: $color_bg;
+    padding: 95px 0;
+
+    &__content {
+        position: relative;
+        z-index: 8;
+    }
+
+    &__title {
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 991px) {
+        background-image: unset;
+
+        &__title {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 16px;
+    }
+
+}

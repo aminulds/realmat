@@ -1,0 +1,37 @@
+.form {
+    background-color: $white;
+    padding: 30px 48px;
+    border-radius: 4px;
+    box-shadow: $shadow-drop;
+
+    &__title {
+        font-size: 20px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &__label {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    &__input {
+        height: 36px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &__check {
+        cursor: pointer;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 20px 16px;
+    }
+}
