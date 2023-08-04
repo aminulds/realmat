@@ -6491,7 +6491,7 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxxl, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-width: 250px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
@@ -12802,6 +12802,22 @@ a {
 .header .navbar-brand img {
   width: 200px;
 }
+.header .navbar-toggler {
+  background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+  padding: 8px 14px;
+}
+.header .navbar-toggler i {
+  color: #fff;
+}
+.header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header .offcanvas {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .header .navbar-nav .nav-item:not(:last-of-type) {
   margin-right: 40px;
 }
@@ -12825,11 +12841,84 @@ a {
   gap: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .header .navbar-brand {
+    margin-right: 60px;
+  }
+  .header .navbar-brand img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 8px 16px;
+  }
+  .header .navbar-brand {
+    margin-right: 0;
+  }
+  .header .navbar-brand img {
+    width: 120px;
+  }
+  .header .offcanvas {
+    margin-top: 78px;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: space-around;
+    align-items: start;
+    padding: 12px;
+  }
+  .header .offcanvas .btn_cancel {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #EC3384;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .offcanvas .btn_cancel i {
+    font-size: 20px;
+    color: #fff;
+  }
+  .header .offcanvas .btn_cancel:active {
+    box-shadow: none;
+    border-color: transparent;
+    background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+  }
+  .header .navbar-nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .header .navbar-nav .nav-item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .header .navbar-nav .nav-link {
+    padding: 12px 6px;
+  }
+  .auth_button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .navbar-brand {
+    margin-right: 0;
+  }
+  .header .navbar-brand img {
+    width: 90px;
+  }
+  .header .offcanvas {
+    margin-top: 66px;
+  }
+}
 .btn {
   padding: 9px 18px;
   border-color: transparent;
   transition: all 0.2s ease-in-out;
   font-weight: 500;
+  border-radius: 5px;
 }
 
 .btn_primary {

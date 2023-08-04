@@ -4,16 +4,17 @@
     border-color: transparent;
     transition: $transition-base;
     font-weight: 500;
+    border-radius: 5px;
 }
 
 .btn_primary {
-    background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+    background: $color_gradient-1;
     color: $white;
 
     &:hover,
     &:active,
     &:focus {
-        background: linear-gradient(180deg, #532B79 0%, #FA4A6F 100%);
+        background: $color_gradient-2;
         color: $white !important;
     }
 }
@@ -23,7 +24,7 @@
 
     &:hover,
     &:focus {
-        background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
+        background: $color_gradient-1;
         border-color: transparent !important;
         color: $white !important;
     }
