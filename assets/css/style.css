@@ -12806,6 +12806,30 @@ a {
   }
 }
 
+.section_gap {
+  padding: 80px 40px;
+}
+@media screen and (max-width: 1199px) {
+  .section_gap {
+    padding: 60px 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_gap {
+    padding: 50px 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section_gap {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section_gap {
+    padding: 30px 16px;
+  }
+}
+
 .header {
   background-color: #fff;
   box-shadow: 0px 1px 0px 0px rgba(39, 39, 39, 0.1019607843);
@@ -12994,7 +13018,6 @@ a {
   background-size: cover;
   background-position: left center;
   background-color: #F8F0FF;
-  padding: 95px 0;
 }
 .banner__content {
   position: relative;
@@ -13017,8 +13040,67 @@ a {
     font-size: 40px;
   }
 }
+
+.feature__title {
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.feature__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.feature .feature-card {
+  display: inline-block;
+  height: 100%;
+  color: #23273A;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  padding: 30px;
+}
+.feature .feature-card__svg {
+  margin-bottom: 36px;
+}
+.feature .feature-card__title {
+  font-size: 22px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature .feature-card__title i {
+  display: none;
+}
+.feature .feature-card__description {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.feature .feature-card:hover {
+  border-color: #FA4A6F;
+}
+.feature .feature-card:hover i {
+  display: block;
+  color: #FA4A6F;
+}
+@media screen and (max-width: 767px) {
+  .feature .feature-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
 @media screen and (max-width: 575px) {
-  .banner {
-    padding: 30px 16px;
+  .feature__title {
+    font-size: 30px;
+  }
+  .feature__content {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+  .feature .feature-card {
+    padding: 16px;
+    border-radius: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
