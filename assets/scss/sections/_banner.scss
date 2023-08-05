@@ -1,9 +1,20 @@
 .banner {
-    background-image: url(/assets/images/banner/banner_couple.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
     background-color: $color_bg;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        width: 58%;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__img-shape {
+        position: absolute;
+        width: 40%;
+        bottom: 0;
+        left: 0;
+    }
 
     &__content {
         position: relative;
@@ -15,8 +26,21 @@
         margin-bottom: 30px;
     }
 
+    @media screen and (max-width: 1199px) {
+        &__img {
+            width: 70%;
+        }
+
+        &__img-shape {
+            width: 35%;
+        }
+
+    }
+
     @media screen and (max-width: 991px) {
-        background-image: unset;
+        &__img {
+            display: none;
+        }
 
         &__title {
             text-align: center;

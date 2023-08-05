@@ -13061,11 +13061,20 @@ a {
 }
 
 .banner {
-  background-image: url(/assets/images/banner/banner_couple.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left center;
   background-color: #F8F0FF;
+  position: relative;
+}
+.banner__img {
+  position: absolute;
+  width: 58%;
+  left: 0;
+  bottom: 0;
+}
+.banner__img-shape {
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+  left: 0;
 }
 .banner__content {
   position: relative;
@@ -13075,9 +13084,17 @@ a {
   font-size: 65px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .banner__img {
+    width: 70%;
+  }
+  .banner__img-shape {
+    width: 35%;
+  }
+}
 @media screen and (max-width: 991px) {
-  .banner {
-    background-image: unset;
+  .banner__img {
+    display: none;
   }
   .banner__title {
     text-align: center;
