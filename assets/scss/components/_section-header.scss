@@ -1,0 +1,26 @@
+.section-header {
+    margin-bottom: 74px;
+    text-align: center;
+
+    &__title {
+        font-size: 54px;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width) {
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+    }
+}

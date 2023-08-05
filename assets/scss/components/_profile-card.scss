@@ -1,0 +1,27 @@
+.profile-card {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+
+    &__body {
+        padding: 30px 22px;
+    }
+
+    &__img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: $color_primary;
+        margin-bottom: 12px;
+    }
+
+    &:hover {
+        box-shadow: $shadow-drop;
+        background-color: #FFFFFF;
+    }
+}

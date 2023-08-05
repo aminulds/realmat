@@ -10,8 +10,11 @@
 @import './components/page_layout';
 @import './components/header';
 @import './components/input';
-@import './components//form';
+@import './components/form';
+@import './components/profile-card';
+@import './components/section-header';
 
 // section
 @import './sections/banner';
 @import './sections/feature';
+@import './sections/profile-feature';
