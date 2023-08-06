@@ -7,15 +7,23 @@
         margin-bottom: 20px;
     }
 
+    &__subtitle {
+        font-size: 40px;
+    }
+
     &__description {
         font-size: 18px;
         margin-bottom: 0;
     }
 
-    @media screen and (max-width) {
+    @media screen and (max-width: 575px) {
         margin-bottom: 40px;
 
         &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
             font-size: 30px;
         }
 

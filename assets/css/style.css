@@ -13044,15 +13044,21 @@ a {
   font-size: 54px;
   margin-bottom: 20px;
 }
+.section-header__subtitle {
+  font-size: 40px;
+}
 .section-header__description {
   font-size: 18px;
   margin-bottom: 0;
 }
-@media screen and (max-width) {
+@media screen and (max-width: 575px) {
   .section-header {
     margin-bottom: 40px;
   }
   .section-header__title {
+    font-size: 30px;
+  }
+  .section-header__subtitle {
     font-size: 30px;
   }
   .section-header__description {
@@ -13087,6 +13093,7 @@ a {
 @media screen and (max-width: 1199px) {
   .banner__img {
     width: 70%;
+    left: -70px;
   }
   .banner__img-shape {
     width: 35%;
@@ -13106,11 +13113,6 @@ a {
   }
 }
 
-.feature__title {
-  font-size: 40px;
-  margin-bottom: 60px;
-  text-align: center;
-}
 .feature__content {
   display: flex;
   align-items: center;
@@ -13172,4 +13174,71 @@ a {
 
 .profile-feature {
   background-color: #FBFAFE;
+}
+
+.why-us {
+  position: relative;
+}
+.why-us__content {
+  margin-top: 90px;
+}
+.why-us__images {
+  position: relative;
+}
+.why-us__img-overlap-1 {
+  opacity: 43%;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+}
+.why-us__img-overlap-2 {
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(10deg);
+}
+.why-us__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 48px;
+  margin-left: 48px;
+}
+.why-us__content-item {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.why-us__content-item h4, .why-us__content-item .h4 {
+  font-size: 20px;
+  color: #FA4A6F;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .why-us__content {
+    margin-top: 0;
+  }
+  .why-us__images {
+    text-align: center;
+  }
+  .why-us__img-overlap-1 {
+    display: none;
+  }
+  .why-us__img-overlap-2 {
+    position: unset;
+    transform: unset;
+    width: 100%;
+  }
+  .why-us__text {
+    margin-left: 0;
+    margin-top: 16px;
+    gap: 24px;
+  }
+  .why-us__content-item {
+    gap: 20px;
+  }
+  .why-us__content-item img {
+    width: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
