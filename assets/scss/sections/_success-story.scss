@@ -1,0 +1,34 @@
+.success-story {
+    background: linear-gradient(180deg, #23273A 46.35%, #FA4A6F 119.01%);
+    color: $white;
+    padding: 0 80px;
+
+    &__content_wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__first-col {
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        .profile-card {
+            &:last-of-type {
+                background: linear-gradient(180deg, rgba(184, 64, 95, 0.29) 15.04%, #B73F5F 70.78%);
+            }
+        }
+    }
+
+    &__second-col {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+
+    &__first-col,
+    &__second-col {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

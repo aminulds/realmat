@@ -5,12 +5,15 @@
     transition: $transition-base;
     font-weight: 500;
     border-radius: 5px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn_primary {
     background: $color_gradient-1;
     color: $white;
-    height: 38px;
 
     &:hover,
     &:active,

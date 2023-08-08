@@ -12807,16 +12807,16 @@ a {
 }
 
 .section_gap {
-  padding: 80px 40px;
+  padding: 100px 60px;
 }
 @media screen and (max-width: 1199px) {
   .section_gap {
-    padding: 60px 30px;
+    padding: 80px 40px;
   }
 }
 @media screen and (max-width: 991px) {
   .section_gap {
-    padding: 50px 24px;
+    padding: 60px 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -12885,7 +12885,7 @@ a {
     margin-right: 60px;
   }
   .header .navbar-brand img {
-    width: 150px;
+    width: 120px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -12896,7 +12896,7 @@ a {
     margin-right: 0;
   }
   .header .navbar-brand img {
-    width: 120px;
+    width: 90px;
   }
   .header .offcanvas {
     margin-top: 78px;
@@ -12946,7 +12946,7 @@ a {
     margin-right: 0;
   }
   .header .navbar-brand img {
-    width: 90px;
+    width: 70px;
   }
   .header .offcanvas {
     margin-top: 66px;
@@ -12958,12 +12958,15 @@ a {
   transition: all 0.2s ease-in-out;
   font-weight: 500;
   border-radius: 5px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn_primary {
   background: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%);
   color: #fff;
-  height: 38px;
 }
 .btn_primary:hover, .btn_primary:active, .btn_primary:focus {
   background: linear-gradient(180deg, #532B79 0%, #FA4A6F 100%);
@@ -13046,6 +13049,7 @@ a {
 }
 .section-header__subtitle {
   font-size: 40px;
+  margin-bottom: 20px;
 }
 .section-header__description {
   font-size: 18px;
@@ -13241,4 +13245,31 @@ a {
   .why-us__content-item img {
     width: 30px;
   }
+}
+
+.success-story {
+  background: linear-gradient(180deg, #23273A 46.35%, #FA4A6F 119.01%);
+  color: #fff;
+  padding: 0 80px;
+}
+.success-story__content_wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.success-story__first-col {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.success-story__first-col .profile-card:last-of-type {
+  background: linear-gradient(180deg, rgba(184, 64, 95, 0.29) 15.04%, #B73F5F 70.78%);
+}
+.success-story__second-col {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.success-story__first-col, .success-story__second-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }/*# sourceMappingURL=style.css.map */
