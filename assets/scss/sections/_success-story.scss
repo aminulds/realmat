@@ -2,6 +2,7 @@
     background: linear-gradient(180deg, #23273A 46.35%, #FA4A6F 119.01%);
     color: $white;
     padding: 0 80px;
+    border-radius: 40px;
 
     &__content_wrap {
         height: 100%;
@@ -12,12 +13,6 @@
     &__first-col {
         padding-top: 80px;
         padding-bottom: 20px;
-
-        .profile-card {
-            &:last-of-type {
-                background: linear-gradient(180deg, rgba(184, 64, 95, 0.29) 15.04%, #B73F5F 70.78%);
-            }
-        }
     }
 
     &__second-col {
@@ -31,4 +26,31 @@
         flex-direction: column;
         gap: 24px;
     }
+
+
+    @media screen and (max-width: 1199px) {
+        padding: 60px;
+        margin-top: 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 30px;
+        margin-top: 0;
+        border-radius: 20px;
+
+        &__first-col {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &__second-col {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 16px;
+    }
+
 }
