@@ -12802,6 +12802,15 @@ a {
   background-color: #FBFAFE;
 }
 
+.swiper-pagination {
+  bottom: 40px !important;
+}
+@media screen and (max-width: 767px) {
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+}
+
 .page__layout {
   padding-top: 102px;
 }
@@ -13141,6 +13150,27 @@ a {
   .pricing-card {
     padding: 30px 16px;
   }
+}
+
+.review-card {
+  text-align: center;
+  height: 100%;
+}
+.review-card__star {
+  color: #fd7e14;
+  margin-bottom: 30px;
+}
+.review-card__text {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.review-card__user {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.review-card__user h4, .review-card__user .h4 {
+  font-size: 16px;
 }
 
 .banner {

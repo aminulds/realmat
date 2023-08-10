@@ -19,3 +19,12 @@ a {
 .bg_gray {
     background-color: $color_bg_gray;
 }
+
+// swipper
+.swiper-pagination {
+    bottom: 40px !important;
+
+    @media screen and (max-width: 767px) {
+        bottom: 10px !important;
+    }
+}
