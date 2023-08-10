@@ -12790,6 +12790,7 @@ body {
 
 a {
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .border_gradient {
@@ -13394,5 +13395,69 @@ a {
 @media screen and (max-width: 575px) {
   .success-story {
     padding: 16px;
+  }
+}
+
+.footer {
+  background-color: #23273A;
+  padding: 100px 60px 20px;
+}
+.footer__logo {
+  width: 200px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__menu a {
+  color: #fff;
+}
+.footer__menu a:hover {
+  color: #FA4A6F;
+}
+.footer__socials a {
+  color: #fff;
+  margin-right: 20px;
+  display: inline;
+}
+.footer__socials a:hover {
+  color: #FA4A6F;
+}
+.footer__copyright {
+  color: #fff;
+  text-align: end;
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 80px 40px 20px;
+  }
+  .footer__logo {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 60px 30px 20px;
+  }
+  .footer__logo {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 40px 20px 20px;
+    margin-top: 20px;
+  }
+  .footer__logo {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .footer {
+    padding: 30px 16px 16px;
+  }
+  .footer__copyright {
+    text-align: start;
   }
 }/*# sourceMappingURL=style.css.map */
