@@ -12792,6 +12792,16 @@ a {
   transition: all 0.3s ease;
 }
 
+.border_gradient {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #FA4A6F 10.57%, #532B79 50%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.bg_gray {
+  background-color: #FBFAFE;
+}
+
 .page__layout {
   padding-top: 102px;
 }
@@ -13076,6 +13086,63 @@ a {
   }
 }
 
+.pricing-card {
+  padding: 60px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 2px solid #EDEDED;
+  position: relative;
+  transition: 0.3s;
+}
+.pricing-card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px;
+  border-radius: inherit;
+  background: linear-gradient(to top, #532B79, #FA4A6F);
+}
+.pricing-card__title {
+  font-size: 30px;
+  color: #FA4A6F;
+  font-weight: 700;
+}
+.pricing-card__time {
+  font-size: 16px;
+  font-weight: 400;
+  color: #91939C;
+}
+.pricing-card__subtitle {
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.pricing-card__list {
+  margin: 48px 0 38px;
+  padding: 0;
+  list-style: inside;
+}
+.pricing-card__list_item {
+  margin-bottom: 10px;
+}
+.pricing-card .list-disable {
+  color: #91939C;
+}
+@media screen and (max-width: 767px) {
+  .pricing-card {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .pricing-card {
+    padding: 30px 16px;
+  }
+}
+
 .banner {
   background-color: #F8F0FF;
   position: relative;
@@ -13180,10 +13247,6 @@ a {
     padding: 16px;
     border-radius: 16px;
   }
-}
-
-.profile-feature {
-  background-color: #FBFAFE;
 }
 
 .why-us {

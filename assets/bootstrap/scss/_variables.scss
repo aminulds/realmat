@@ -296,9 +296,14 @@ $color_purple: #532B79;
 $color_gradient-1: linear-gradient(180deg, #FA4A6F 0%, #532B79 100%
 );
 $color_gradient-2: linear-gradient(180deg, #532B79 0%, #FA4A6F 100%);
+$color_gradient-3: linear-gradient(90deg, #FA4A6F 10.57%, #532B79 50%),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+
 $color-gradien_radial-1: radial-gradient(38.69% 38.69% at 65.34% 54.59%, #F8F0FF 0%, #FFF7FA 100%);
 $shadow-drop: 0px 4px 0px 0px #0000000D;
 $color_border: #EDEDED;
+$color_text_gray: #91939C;
 
 
 
