@@ -60,574 +60,177 @@
 
         <!-- page content -->
         <main class="page__layout">
-            <!-- banner -->
-            <section class="banner section_gap">
-                <img class="banner__img" src="assets/images/banner/banner_couple.png" alt="banner_couple">
-                <img class="banner__img-shape" src="assets/images/banner/banner-shape.png" alt="banner-shape">
-                <div class="container">
-                    <div class="row justify-content-center justify-content-lg-end">
-                        <div class="col-lg-7">
-                            <div class="banner__content">
-                                <h1 class="banner__title">Find your mate with us</h1>
-
-                                <div class="form">
-                                    <h2 class="form__title">Create your profile for your perfect match!</h2>
-                                    <form class="row g-3 g-md-4">
-                                        <div class="col-12">
-                                            <label for="create_profile" class="form__label">Create profile for</label>
-                                            <select id="create_profile" class="form__input form-select">
-                                                <option selected>Self</option>
-                                                <option>Friend</option>
-                                                <option>Others</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="first_name" class="form__label">First Name</label>
-                                            <input type="text" id="first_name" class="form__input form-control" placeholder="Cameron">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="last_name" class="form__label">Last Name</label>
-                                            <input type="text" id="last_name" class="form__input form-control" placeholder="Williamson">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="email" class="form__label">Email Address</label>
-                                            <input type="email" id="email" class="form__input form-control" placeholder="kenzi.lawson@example.com">
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="row g-3 g-md-4">
-                                                <label class="form__label">Mobile Number</label>
-                                                <div class="col-5">
-                                                    <select id="country_code" class="form__input form-select">
-                                                        <option selected>(+880)</option>
-                                                        <option>(+91)</option>
-                                                        <option>(+61)</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-7">
-                                                    <input type="text" id="mobile" class="form__input form-control" placeholder="123 5678 900">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="gender" class="form__label">Gender</label>
-                                            <select id="gender" class="form__input form-select">
-                                                <option selected>Male</option>
-                                                <option>Female</option>
-                                                <option>Others</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="gender" class="form__label">Country</label>
-                                            <select id="gender" class="form__input form-select">
-                                                <option selected>Bangladesh</option>
-                                                <option>India</option>
-                                                <option>Singapore</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="create_pass" class="form__label">Create Your Password</label>
-                                            <input type="password" class="form__input form-control" id="create_pass" placeholder="******">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="confirm_pass" class="form__label">Confirm Your Password</label>
-                                            <input type="password" class="form__input form-control" id="confirm_pass" placeholder="******">
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-check">
-                                                <input class="form__check form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form__label" for="gridCheck">
-                                                    I have read and accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn_primary w-100">Create Account</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- feature -->
-            <section class="feature section_gap">
-                <div class="container">
-                    <div class="section-header">
-                        <h3 class="section-header__subtitle">We bringing people together with our platform in very easy way</h3>
-                    </div>
-                    <div class="feature__content">
-                        <a href="#" class="feature-card">
-                            <svg class="feature-card__svg" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 23.5846C0 18.693 0 13.8014 0 8.89883C0 4.55314 2.8155 1.05912 7.06059 0.163782C7.5844 0.054594 8.14095 0 8.6866 0C15.7035 0 22.7205 0 29.7374 0C34.0589 0 37.7474 3.2538 38.3149 7.55581C38.3694 7.98165 38.4022 8.42932 38.4022 8.85515C38.4131 13.5502 38.4131 18.2453 38.4022 22.9404C38.4022 24.3926 37.0053 25.2661 35.8049 24.5673C35.1829 24.207 34.9101 23.6501 34.9101 22.9295C34.921 18.2126 34.921 13.5066 34.9101 8.78964C34.9101 6.34383 33.3714 4.31293 31.0251 3.67964C30.5559 3.54861 30.0648 3.49402 29.5737 3.49402C22.6659 3.4831 15.7581 3.4831 8.83938 3.4831C5.7947 3.49402 3.4921 5.78697 3.4921 8.83331C3.48119 18.6712 3.48119 28.5199 3.4921 38.3578C3.4921 41.3604 5.80561 43.6643 8.81755 43.6752C11.3821 43.6861 13.9466 43.6752 16.5111 43.6861C17.3732 43.6861 18.1262 44.3413 18.2244 45.1383C18.3444 46.0883 17.8315 46.8853 16.9149 47.1146C16.7293 47.1583 16.522 47.1692 16.3256 47.1692C13.7829 47.1692 11.2293 47.1802 8.6866 47.1692C3.92861 47.1583 0.0109128 43.2494 0 38.4888C0 33.5207 0 28.5527 0 23.5846Z"
-                                    fill="#FA4A6F" />
-                                <path d="M20.9531 40.1494C20.9531 33.4125 26.4641 27.9422 33.23 27.9531C39.9414 27.9641 45.3978 33.4671 45.3978 40.215C45.3978 46.9519 39.8868 52.4222 33.1209 52.4113C26.4204 52.4003 20.9531 46.8973 20.9531 40.1494ZM41.9057 40.1604C41.8948 35.3452 37.9662 31.4362 33.1427 31.4472C28.3629 31.4581 24.4452 35.3779 24.4452 40.1713C24.4452 44.9865 28.3738 48.9172 33.1755 48.9172C37.988 48.9172 41.9166 44.9756 41.9057 40.1604Z" fill="#532B79" />
-                                <path d="M19.2064 22.7116C16.3036 22.7116 13.3899 22.7116 10.4871 22.7116C9.57042 22.7116 8.82835 22.0346 8.73014 21.1611C8.63192 20.2986 9.17756 19.5015 10.0397 19.2831C10.2252 19.2285 10.4325 19.2285 10.629 19.2285C16.3364 19.2285 22.0438 19.2285 27.7402 19.2285C28.8861 19.2285 29.6718 19.9601 29.6609 20.9974C29.65 22.0019 28.8643 22.7225 27.7512 22.7225C24.9138 22.7116 22.0656 22.7116 19.2064 22.7116Z" fill="#FA4A6F" />
-                                <path d="M16.5769 13.9764C14.6017 13.9764 12.6155 13.9764 10.6403 13.9764C9.52721 13.9764 8.74149 13.2558 8.73058 12.2513C8.71967 11.214 9.5163 10.4824 10.6512 10.4824C14.6126 10.4824 18.5739 10.4824 22.5244 10.4824C23.6375 10.4824 24.4232 11.1921 24.4341 12.2076C24.445 13.2449 23.6484 13.9764 22.5135 13.9764C20.5382 13.9764 18.563 13.9764 16.5769 13.9764Z" fill="#FA4A6F" />
-                                <path d="M15.5619 29.6999C13.9141 29.6999 12.2553 29.6999 10.6075 29.6999C9.51619 29.6999 8.73047 28.9574 8.73047 27.942C8.74138 26.9484 9.51619 26.2168 10.5747 26.2168C13.9141 26.2168 17.2534 26.2168 20.6036 26.2168C21.6621 26.2168 22.4479 26.9593 22.4588 27.942C22.4697 28.9356 21.6621 29.6999 20.5709 29.6999C18.9121 29.6999 17.2315 29.6999 15.5619 29.6999Z" fill="#FA4A6F" />
-                                <path d="M13.5322 33.1934C14.4925 33.1934 15.4529 33.1934 16.4241 33.1934C17.4936 33.2043 18.2466 33.9249 18.2466 34.9404C18.2466 35.9558 17.4936 36.6874 16.4241 36.6874C14.4598 36.6983 12.5064 36.6983 10.5421 36.6874C9.49448 36.6874 8.71967 35.9121 8.73058 34.9185C8.7415 33.9468 9.5163 33.2043 10.5312 33.2043C11.5352 33.1934 12.5392 33.1934 13.5322 33.1934Z" fill="#FA4A6F" />
-                                <path d="M32.0073 40.4216C33.1531 39.2642 34.2226 38.1832 35.303 37.1023C36.1214 36.2834 37.169 36.2397 37.9002 36.9822C38.6314 37.7246 38.5768 38.7619 37.7474 39.5918C36.296 41.044 34.8446 42.4962 33.3932 43.9484C32.4984 44.8437 31.5271 44.8437 30.6323 43.9484C29.9229 43.2496 29.2136 42.5398 28.5152 41.8301C27.7622 41.0658 27.7404 40.0067 28.4497 39.2969C29.1481 38.5981 30.2176 38.6091 30.9815 39.3625C31.3198 39.69 31.6363 40.0394 32.0073 40.4216Z" fill="#532B79" />
-                            </svg>
-                            <h3 class="feature-card__title">
-                                Sign Up <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                            <p class="feature-card__description">Register for free & put up <br> your Matrimony Profile</p>
-                        </a>
-                        <a href="#" class="feature-card">
-                            <svg class="feature-card__svg" width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M43.7191 47.8121C41.7517 47.8121 39.7955 47.1694 38.1992 45.9856C36.5578 44.7679 35.3773 43.088 34.7928 41.1262C34.6354 40.585 34.3431 40.3708 33.781 40.3708C31.3864 40.3821 29.0592 40.3821 26.8558 40.3821C24.4274 40.3821 22.0553 40.3821 19.7732 40.3708C19.0986 40.3708 18.8963 40.7429 18.7614 41.1375C17.536 45.0047 13.9947 47.5979 9.94746 47.5979C9.70014 47.5979 9.44157 47.5866 9.18299 47.5641C7.30555 47.4175 5.46183 46.6508 4.00034 45.3993C2.4714 44.0915 1.41462 42.3552 0.953694 40.3596C0.380341 37.913 0.886246 35.2747 2.33649 33.1212C3.77549 30.9903 6.00145 29.5472 8.44101 29.1751C8.94691 29.0962 9.45281 29.0623 9.93622 29.0623C10.667 29.0623 11.3977 29.1525 12.0947 29.3329C12.2184 29.3668 12.3196 29.378 12.4095 29.378C12.7693 29.378 12.9491 29.1413 13.0503 28.9609C14.8491 25.8603 16.6816 22.7034 18.4466 19.6593L20.2228 16.6151C20.2566 16.5587 20.2791 16.4911 20.2903 16.446C20.2903 16.4347 20.3015 16.4235 20.3015 16.4122L20.3802 16.2092L20.2341 16.0514C18.4128 14.1572 17.4573 11.7219 17.536 9.18512C17.6147 6.67087 18.7164 4.2581 20.5489 2.5669C22.2127 1.03354 24.4274 0.199219 26.7771 0.199219C29.1492 0.199219 31.3751 1.05609 33.039 2.60072C34.849 4.28064 35.9395 6.68215 36.0069 9.18512C36.0856 11.7219 35.1188 14.1572 33.2975 16.0627L33.1177 16.2431L40.7399 29.3217L40.9535 29.3104C41.3245 29.2878 41.6842 29.254 42.044 29.2202C42.7185 29.1525 43.3481 29.0962 43.9776 29.0962C44.0563 29.0962 44.135 29.0962 44.2137 29.0962C46.2823 29.1525 48.3284 29.9756 49.9585 31.43C51.5886 32.8732 52.6566 34.8124 52.9714 36.8757C53.3312 39.2208 52.8477 41.5885 51.5999 43.5277C50.352 45.467 48.4183 46.8763 46.1586 47.4851C45.3492 47.6994 44.5398 47.8121 43.7191 47.8121ZM43.5504 33.1663C40.6724 33.2001 38.4352 35.4889 38.4465 38.3752C38.4577 41.1826 40.7399 43.4714 43.5392 43.4826H43.5617C44.922 43.4826 46.2036 42.9414 47.1817 41.9606C48.1597 40.9797 48.6994 39.6718 48.6994 38.2963C48.6881 35.5114 46.361 33.1663 43.6067 33.1663H43.5504ZM10.0037 33.1663C7.1594 33.1776 4.85474 35.5002 4.85474 38.3527C4.85474 41.1375 7.19312 43.4826 9.96995 43.4826H10.0037C12.8142 43.4601 15.1076 41.1488 15.1076 38.3301C15.1076 35.4776 12.8255 33.1663 10.0262 33.1663H10.0037ZM24.405 18.4191C24.0115 18.4191 23.8091 18.6784 23.663 18.9264C22.5275 20.8995 21.3583 22.9064 20.2341 24.8456L16.333 31.5428L16.5017 31.7232C17.6596 32.9521 18.4241 34.26 18.8513 35.7369C18.9412 36.0301 19.3347 36.2556 19.6158 36.2668C21.9766 36.2781 24.315 36.2781 26.5747 36.2781C26.5747 36.2781 26.5747 36.2781 26.5859 36.2781C29.0817 36.2781 31.555 36.2781 33.9496 36.2668C34.2531 36.2668 34.6354 35.985 34.7253 35.6918C35.1525 34.2825 35.8608 33.0423 36.8276 32.005C37.2098 31.5879 37.0862 31.2384 36.9288 30.9678C34.5567 26.9202 32.1846 22.85 29.8799 18.8813C29.8012 18.746 29.6101 18.4191 29.1829 18.4191C29.093 18.4191 28.9918 18.4303 28.8794 18.4642C28.1711 18.6558 27.4516 18.746 26.7546 18.746C26.0688 18.746 25.3943 18.6558 24.731 18.4754C24.6073 18.4416 24.4949 18.4191 24.405 18.4191ZM26.7883 4.30319C25.4168 4.30319 24.1239 4.85565 23.1458 5.83655C22.1678 6.81744 21.6394 8.1253 21.6394 9.48954C21.6506 12.2631 23.989 14.6082 26.7546 14.6082H26.7995C29.6326 14.5744 31.926 12.2631 31.9147 9.44444C31.9035 6.64832 29.5651 4.29192 26.7995 4.29192L26.7883 4.30319Z"
-                                    fill="#FA4A6F" />
-                            </svg>
-
-                            <h3 class="feature-card__title">
-                                Connect <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                            <p class="feature-card__description">Select & Connect with <br> Matches you like</p>
-                        </a>
-                        <a href="#" class="feature-card">
-                            <svg class="feature-card__svg" width="46" height="53" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 23.5846C0 18.693 0 13.8014 0 8.89883C0 4.55314 2.8155 1.05912 7.06059 0.163782C7.5844 0.054594 8.14095 0 8.6866 0C15.7035 0 22.7205 0 29.7374 0C34.0589 0 37.7474 3.2538 38.3149 7.55581C38.3694 7.98165 38.4022 8.42932 38.4022 8.85515C38.4131 13.5502 38.4131 18.2453 38.4022 22.9404C38.4022 24.3926 37.0053 25.2661 35.8049 24.5673C35.1829 24.207 34.9101 23.6501 34.9101 22.9295C34.921 18.2126 34.921 13.5066 34.9101 8.78964C34.9101 6.34383 33.3714 4.31293 31.0251 3.67964C30.5559 3.54861 30.0648 3.49402 29.5737 3.49402C22.6659 3.4831 15.7581 3.4831 8.83938 3.4831C5.7947 3.49402 3.4921 5.78697 3.4921 8.83331C3.48119 18.6712 3.48119 28.5199 3.4921 38.3578C3.4921 41.3604 5.80561 43.6643 8.81755 43.6752C11.3821 43.6861 13.9466 43.6752 16.5111 43.6861C17.3732 43.6861 18.1262 44.3413 18.2244 45.1383C18.3444 46.0883 17.8315 46.8853 16.9149 47.1146C16.7293 47.1583 16.522 47.1692 16.3256 47.1692C13.7829 47.1692 11.2293 47.1802 8.6866 47.1692C3.92861 47.1583 0.0109128 43.2494 0 38.4888C0 33.5207 0 28.5527 0 23.5846Z"
-                                    fill="#FA4A6F" />
-                                <path d="M20.9531 40.1494C20.9531 33.4125 26.4641 27.9422 33.23 27.9531C39.9414 27.9641 45.3978 33.4671 45.3978 40.215C45.3978 46.9519 39.8868 52.4222 33.1209 52.4113C26.4204 52.4003 20.9531 46.8973 20.9531 40.1494ZM41.9057 40.1604C41.8948 35.3452 37.9662 31.4362 33.1427 31.4472C28.3629 31.4581 24.4452 35.3779 24.4452 40.1713C24.4452 44.9865 28.3738 48.9172 33.1755 48.9172C37.988 48.9172 41.9166 44.9756 41.9057 40.1604Z" fill="#532B79" />
-                                <path d="M19.2064 22.7116C16.3036 22.7116 13.3899 22.7116 10.4871 22.7116C9.57042 22.7116 8.82835 22.0346 8.73014 21.1611C8.63192 20.2986 9.17756 19.5015 10.0397 19.2831C10.2252 19.2285 10.4325 19.2285 10.629 19.2285C16.3364 19.2285 22.0438 19.2285 27.7402 19.2285C28.8861 19.2285 29.6718 19.9601 29.6609 20.9974C29.65 22.0019 28.8643 22.7225 27.7512 22.7225C24.9138 22.7116 22.0656 22.7116 19.2064 22.7116Z" fill="#FA4A6F" />
-                                <path d="M16.5769 13.9764C14.6017 13.9764 12.6155 13.9764 10.6403 13.9764C9.52721 13.9764 8.74149 13.2558 8.73058 12.2513C8.71967 11.214 9.5163 10.4824 10.6512 10.4824C14.6126 10.4824 18.5739 10.4824 22.5244 10.4824C23.6375 10.4824 24.4232 11.1921 24.4341 12.2076C24.445 13.2449 23.6484 13.9764 22.5135 13.9764C20.5382 13.9764 18.563 13.9764 16.5769 13.9764Z" fill="#FA4A6F" />
-                                <path d="M15.5619 29.6999C13.9141 29.6999 12.2553 29.6999 10.6075 29.6999C9.51619 29.6999 8.73047 28.9574 8.73047 27.942C8.74138 26.9484 9.51619 26.2168 10.5747 26.2168C13.9141 26.2168 17.2534 26.2168 20.6036 26.2168C21.6621 26.2168 22.4479 26.9593 22.4588 27.942C22.4697 28.9356 21.6621 29.6999 20.5709 29.6999C18.9121 29.6999 17.2315 29.6999 15.5619 29.6999Z" fill="#FA4A6F" />
-                                <path d="M13.5322 33.1934C14.4925 33.1934 15.4529 33.1934 16.4241 33.1934C17.4936 33.2043 18.2466 33.9249 18.2466 34.9404C18.2466 35.9558 17.4936 36.6874 16.4241 36.6874C14.4598 36.6983 12.5064 36.6983 10.5421 36.6874C9.49448 36.6874 8.71967 35.9121 8.73058 34.9185C8.7415 33.9468 9.5163 33.2043 10.5312 33.2043C11.5352 33.1934 12.5392 33.1934 13.5322 33.1934Z" fill="#FA4A6F" />
-                                <path d="M32.0073 40.4216C33.1531 39.2642 34.2226 38.1832 35.303 37.1023C36.1214 36.2834 37.169 36.2397 37.9002 36.9822C38.6314 37.7246 38.5768 38.7619 37.7474 39.5918C36.296 41.044 34.8446 42.4962 33.3932 43.9484C32.4984 44.8437 31.5271 44.8437 30.6323 43.9484C29.9229 43.2496 29.2136 42.5398 28.5152 41.8301C27.7622 41.0658 27.7404 40.0067 28.4497 39.2969C29.1481 38.5981 30.2176 38.6091 30.9815 39.3625C31.3198 39.69 31.6363 40.0394 32.0073 40.4216Z" fill="#532B79" />
-                            </svg>
-                            <h3 class="feature-card__title">
-                                Interact <i class="fa-solid fa-arrow-right"></i>
-                            </h3>
-                            <p class="feature-card__description">Become a Premium Member <br> & Start a Conversation</p>
-                        </a>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- feature profile -->
-            <section class="bg_gray section_gap">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-header__title">Featured profiles</h2>
-                        <p class="section-header__description">Aenean at ligula massa. Donec ipsum elit, placenta sed duierrut dapibus semper turpin Fusce nec premium nuns.</p>
-                    </div>
-                    <!-- swipper -->
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/1.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/2.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/3.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/4.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/5.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/6.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/7.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/8.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profile-card">
-                                    <img class="profile-card__img" src="assets/images/profile/9.png" alt="profile-image">
-                                    <div class="profile-card__body">
-                                        <h3 class="profile-card__title">Profile ID: 23456</h3>
-                                        <p class="profile-card__address">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-            </section>
-
-            <!-- why use us -->
-            <section class="why-us section_gap">
-                <div class="container">
-                    <div class="section-header">
-                        <h3 class="section-header__subtitle">Lorem dolor amet consectetur adipiscing. Commode acceptor bandit torpor meanness egoists mathis. ucibus laces ultrices acned seed.</h3>
-                    </div>
-
-                    <div class="row g-0 justify-content-center">
-                        <div class="col-xl-9">
-                            <div class="why-us__content">
-                                <div class="row g-4 g-md-5 row-cols-1 row-cols-md-2">
-                                    <div class="col">
-                                        <div class="why-us__images">
-                                            <img class="why-us__img-overlap-1 img-fluid" src="assets/images/why-us/1.png" alt="why-us-image">
-                                            <img class="why-us__img-overlap-2 img-fluid" src="assets/images/why-us/2.png" alt="why-us-image">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="why-us__text">
-                                            <div class="why-us__content-item">
-                                                <img src="assets/images/why-us/icon-1.png" alt="icon">
-                                                <h4>100% Screened Profiles</h4>
-                                            </div>
-                                            <div class="why-us__content-item">
-                                                <img src="assets/images/why-us/icon-2.png" alt="icon">
-                                                <h4>Verification by Personal Visit</h4>
-                                            </div>
-                                            <div class="why-us__content-item">
-                                                <img src="assets/images/why-us/icon-3.png" alt="icon">
-                                                <h4>Strong Privacy</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- success story -->
+            <!-- advance serach -->
             <section class="section_gap">
                 <div class="container">
-                    <div class="success-story">
-                        <div class="row row-cols-1 row-cols-lg-2 gx-4 gx-lg-5 gy-0">
-                            <div class="col">
-                                <div class="success-story__content_wrap">
-                                    <div class="section-header text-start">
-                                        <h3 class="section-header__subtitle text-start">We have thousands of success stories</h3>
-                                        <p class="section-header__description text-start">Lorem ipsum dolor sit amet consectetur. Convallis id elit egoists aurice amet eu lactose Lucius intercom. Proin pellentesque vitae farer temper ultrices nulled</p>
-                                        <a class="btn btn_primary d-inline-flex mt-5" href="#">Get start now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col">
-                                        <div class="success-story__first-col">
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/1.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/2.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/3.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
+                    <div class="accordion" id="advance_serach_accordian">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed px-3 px-sm-5" type="button" data-bs-toggle="collapse" data-bs-target="#advanceSearch" aria-expanded="false" aria-controls="advanceSearch">
+                                    Advanced Search
+                                </button>
+                            </h2>
+                            <div id="advanceSearch" class="accordion-collapse collapse" data-bs-parent="#advance_serach_accordian">
+                                <div class="advance-search">
+                                    <h5 class="fw-bold text-center mb-3">Member Type</h5>
+                                    <div class="advance-search__member-type px-3 px-sm-5 row row-cols-3">
+                                        <div class="col form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="free_member" id="free_member" value="free_member">
+                                            <label class="form-check-label" for="free_member">Free <span class="d-none d-md-inline">Member</span></label>
+                                        </div>
+                                        <div class="col form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="premium_member" id="premium_member" value="premium_member">
+                                            <label class="form-check-label" for="premium_member">Premium <span class="d-none d-md-inline">Member</span></label>
+                                        </div>
+                                        <div class="col form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="all_member" id="all_member" value="all_member">
+                                            <label class="form-check-label" for="all_member">All <span class="d-none d-md-inline">Member</span></label>
                                         </div>
                                     </div>
-
-                                    <div class="col">
-                                        <div class="success-story__second-col">
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/4.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/5.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
-                                            <div class="profile-card">
-                                                <img class="profile-card__img" src="assets/images/success-story/6.png" alt="profile-image">
-                                                <div class="profile-card__body bg-white text-dark">
-                                                    <h3 class="profile-card__title">25 august -2020</h3>
-                                                    <p class="profile-card__address">Jenny & Wilson Stories</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="advance-search__subscription border-bottom mx-3 mx-sm-5 py-3">
+                                        <span class="d-none d-md-inline">*Your paid or Premium Membership gives you more property to find your best mate and his valuable information.</span>
+                                        <a class="d-flex align-items-center text-nowrap" href="#">Change Membership <i class="fa-solid fa-angle-right ms-1"></i></a>
                                     </div>
 
+                                    <div class="form">
+                                        <form class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 g-md-4 justify-content-center">
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Age</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>26-30</option>
+                                                    <option>31-35</option>
+                                                    <option>36-34</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_id" class="form__label">Email Address</label>
+                                                <input type="text" id="member_id" class="form__input form-control" placeholder="Member id">
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Martial Status</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Status 1</option>
+                                                    <option>Status 2</option>
+                                                    <option>Status 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Religion</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Religion 1</option>
+                                                    <option>Religion 2</option>
+                                                    <option>Religion 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Caste</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Caste 1</option>
+                                                    <option>Caste 2</option>
+                                                    <option>Caste 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Sub Caste</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Sub Caste 1</option>
+                                                    <option>Sub Caste 2</option>
+                                                    <option>Sub Caste 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Mother Tongue</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Mother Tongue 1</option>
+                                                    <option>Mother Tongue 2</option>
+                                                    <option>Mother Tongue 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Profession</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Profession 1</option>
+                                                    <option>Profession 2</option>
+                                                    <option>Profession 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Country</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>Country 1</option>
+                                                    <option>Country 2</option>
+                                                    <option>Country 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">State</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>State 1</option>
+                                                    <option>State 2</option>
+                                                    <option>State 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">City</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>City 1</option>
+                                                    <option>City 2</option>
+                                                    <option>City 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="member_age" class="form__label">Height</label>
+                                                <select id="member_age" class="form__input form-select">
+                                                    <option selected>Choose One</option>
+                                                    <option>4'-5'</option>
+                                                    <option>5'1"-5'5"</option>
+                                                    <option>5'6"-6'</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="submit" class="btn btn_primary w-100">Search Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
 
-            <!-- membership plan -->
-            <section class="section_gap bg_gray">
+            <!-- active members -->
+            <section class="section_gap pt-0">
                 <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-header__title">Membership Plans</h2>
-                        <p class="section-header__description">Upgrade your plan as per your customized requirements. With a paid membership, you can seamlessly connect with your prospects and get more responses. Here are some key benefits:</p>
-                    </div>
-
-                    <div class="row g-4 g-lg-5 row-cols-1 row-cols-lg-2">
-                        <div class="col">
-                            <div class="pricing-card">
-                                <h3 class="pricing-card__title">$0.00 <sub class="pricing-card__time">/ month</sub></h3>
-                                <h4 class="pricing-card__subtitle">Free Membership</h4>
-                                <div class="border_gradient"><span class="sr-only">sr only</span></div>
-                                <ul class="pricing-card__list">
-                                    <li class="pricing-card__list_item">Match, Chat & Meet</li>
-                                    <li class="pricing-card__list_item">5 Super Likes a week</li>
-                                    <li class="pricing-card__list_item">Hide Advertisements</li>
-                                    <li class="pricing-card__list_item list-disable">1 Free Boost a month</li>
-                                    <li class="pricing-card__list_item list-disable">New Top Picks every day</li>
-                                    <li class="pricing-card__list_item list-disable">Message before Matching</li>
-                                    <li class="pricing-card__list_item list-disable">Prioritised Likes</li>
-                                    <li class="pricing-card__list_item list-disable">See the Likes you've sent in the last 7 days</li>
-                                </ul>
-
-                                <div>
-                                    <a href="#" class="btn btn_primary">Subscribe now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="pricing-card">
-                                <h3 class="pricing-card__title">$19.99 <sub class="pricing-card__time">/ month</sub></h3>
-                                <h4 class="pricing-card__subtitle">Premium Membership</h4>
-                                <div class="border_gradient"><span class="sr-only">sr only</span></div>
-                                <ul class="pricing-card__list">
-                                    <li class="pricing-card__list_item">Match, Chat & Meet</li>
-                                    <li class="pricing-card__list_item">5 Super Likes a week</li>
-                                    <li class="pricing-card__list_item">Hide Advertisements</li>
-                                    <li class="pricing-card__list_item">1 Free Boost a month</li>
-                                    <li class="pricing-card__list_item">New Top Picks every day</li>
-                                    <li class="pricing-card__list_item">Message before Matching</li>
-                                    <li class="pricing-card__list_item">Prioritised Likes</li>
-                                    <li class="pricing-card__list_item">See the Likes you've sent in the last 7 days</li>
-                                </ul>
-
-                                <div>
-                                    <a href="#" class="btn btn_primary">Subscribe now</a>
-                                </div>
+                    <div class="section-header d-flex align-items-center justify-content-between">
+                        <h3 class="section-header__subtitle mb-0"><span class="d-none d-md-inline">Active</span> Members</h3>
+                        <div class="d-flex align-items-center gap-2 gap-sm-4">
+                            <span>Show <span class="d-none d-sm-inline">Result:</span></span>
+                            <div class="">
+                                <select id="show_result" class="form__input form-select">
+                                    <option selected>01-10</option>
+                                    <option>01-20</option>
+                                    <option>01-30</option>
+                                    <option>01-40</option>
+                                    <option>01-50</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <!-- client say -->
-            <section class="section_gap position-relative">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-header__title">What our members say</h2>
-                    </div>
 
-                    <!-- swipper -->
-                    <!-- Slider main container -->
-                    <div class="swiper position-static">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <p class="review-card__text">Lorem ipsum dolor sit amet consectetur. </p>
-                                    <div class="review-card__user">
-                                        <img src="/assets/images/reviewer/1.png" alt="user">
-                                        <h4>Brooklyn Simmons</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
                 </div>
             </section>
 

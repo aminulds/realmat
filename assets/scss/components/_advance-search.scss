@@ -1,0 +1,25 @@
+.advance-search {
+    padding-top: 30px;
+
+    &__member-type {
+        width: fit-content;
+        margin: 0 auto;
+        white-space: nowrap;
+        gap: 30px;
+
+        .form-check {
+            width: fit-content;
+        }
+    }
+
+    &__subscription {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: $color_text_gray;
+            margin-right: 8px;
+        }
+    }
+}

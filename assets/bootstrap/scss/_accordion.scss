@@ -35,8 +35,11 @@
   align-items: center;
   width: 100%;
   padding: var(--#{$prefix}accordion-btn-padding-y) var(--#{$prefix}accordion-btn-padding-x);
-  @include font-size($font-size-base);
-  color: var(--#{$prefix}accordion-btn-color);
+  // @include font-size($font-size-base);
+  font-size: 20px;
+  font-weight: 600;
+  // color: var(--#{$prefix}accordion-btn-color);
+  color: $color_dark;
   text-align: left; // Reset button style
   background-color: var(--#{$prefix}accordion-btn-bg);
   border: 0;
@@ -45,8 +48,9 @@
   @include transition(var(--#{$prefix}accordion-transition));
 
   &:not(.collapsed) {
-    color: var(--#{$prefix}accordion-active-color);
-    background-color: var(--#{$prefix}accordion-active-bg);
+    // color: var(--#{$prefix}accordion-active-color);
+    // background-color: var(--#{$prefix}accordion-active-bg);
+    background-color: transparent;
     box-shadow: inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0 var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
 
     &::after {
@@ -74,9 +78,11 @@
 
   &:focus {
     z-index: 3;
-    border-color: var(--#{$prefix}accordion-btn-focus-border-color);
+    // border-color: var(--#{$prefix}accordion-btn-focus-border-color);
+    border-color: $color_primary;
     outline: 0;
-    box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
+    // box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
+    box-shadow: none;
   }
 }
 
@@ -136,10 +142,16 @@
     border-left: 0;
     @include border-radius(0);
 
-    &:first-child { border-top: 0; }
-    &:last-child { border-bottom: 0; }
+    &:first-child {
+      border-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
 
     .accordion-button {
+
       &,
       &.collapsed {
         @include border-radius(0);
