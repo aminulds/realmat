@@ -15,22 +15,15 @@
         a {
             color: $white;
 
-            &:hover {
-                color: $color_primary;
+            &.active {
+                color: $color_primary
             }
-        }
-    }
-
-    &__socials {
-        a {
-            color: $white;
-            margin-right: 20px;
-            display: inline;
 
             &:hover {
                 color: $color_primary;
             }
         }
+
     }
 
     &__copyright {
