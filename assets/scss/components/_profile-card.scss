@@ -3,10 +3,14 @@
     border-radius: 20px;
     background-color: transparent;
     transition: 0.3s;
+    box-shadow: $box-shadow-sm;
+    height: 100%;
 
     &__body {
         padding: 30px 22px;
         margin-top: -2px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__img {
@@ -21,8 +25,20 @@
         margin-bottom: 12px;
     }
 
+    &__info {
+        font-size: 14px;
+        color: $color_text_gray;
+        margin-bottom: 16px;
+    }
+
+    a.btn {
+        color: $white;
+        width: fit-content;
+        align-self: end;
+    }
+
     &:hover {
-        box-shadow: $shadow-drop;
+        box-shadow: $box-shadow;
         background-color: #FFFFFF;
     }
 }
