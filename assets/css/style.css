@@ -13401,6 +13401,7 @@ a {
 .footer {
   background-color: #23273A;
   padding: 100px 60px 20px;
+  margin-top: 24px;
 }
 .footer__logo {
   width: 200px;
@@ -13447,7 +13448,6 @@ a {
 @media screen and (max-width: 767px) {
   .footer {
     padding: 40px 20px 20px;
-    margin-top: 20px;
   }
   .footer__logo {
     width: 70px;
