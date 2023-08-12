@@ -287,6 +287,7 @@ $cyans: (
 
 // custom theme color
 $color_primary: #FA4A6F;
+$color_primary_bg: #FCE0ED;
 $color_bg: #F8F0FF;
 $color_bg-2: #FCE0ED;
 $color_secondary: #EC3384;
@@ -313,10 +314,12 @@ $primary: $color_primary !default;
 $secondary: $color_secondary !default;
 $success: $green !default;
 $info: $color_blue !default;
-$warning: $yellow !default;
+$warning: $orange !default;
 $danger: $color_secondary !default;
 $light: $gray-100 !default;
 $dark: $color_dark !default;
+// custom
+$primary_bg: $color_primary_bg !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -328,7 +331,8 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark) !default;
+  "dark": $dark,
+  "bg_primary": $primary_bg) !default;
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
